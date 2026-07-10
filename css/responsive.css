@@ -1,0 +1,493 @@
+/* Laptop */
+
+@media (max-width:1200px){
+
+    .hero-text h1 {
+        font-size: 64px;
+    }
+
+    .hero-text h1 .semibold{
+        transform: translateX(-8px);
+    }
+
+    .video-wrapper {
+        width: 240px;
+    }
+    
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+    .hero-text h1 {
+        font-size: 52px;
+    }
+
+    .hero-text h1 .semibold{
+        transform: translateX(-4px);
+    }
+
+    .hero-content {
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .video-wrapper {
+        width: 200px;
+        margin-top: 8px;
+    }
+
+    .nav-links {
+        gap: 22px;
+    }
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .navbar {
+        padding-top: 24px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 40px;
+        gap: 32px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+        line-height: 0.9;
+    }
+
+    /* Remove the left shift on mobile */
+    .hero-text h1 .semibold{
+        transform: translateX(0);
+    }
+
+    .hero-text p {
+        max-width: 100%;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .btn {
+        margin-top: 28px;
+        padding: 14px 28px;
+    }
+
+    .video-wrapper {
+        width: 100%;
+        max-width: 260px;
+        align-self: center;
+    }
+
+    .bottom-bar {
+        padding-bottom: 28px;
+    }
+
+    .arrow {
+        width: 32px;
+        height: 32px;
+    }
+}
+/*==========================================
+        ABOUT SECTION RESPONSIVE
+==========================================*/
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+    .about-wrapper{
+        gap:60px;
+    }
+
+    .about-heading{
+        font-size:52px;
+    }
+
+    .about-right{
+        padding-top:55px;
+    }
+
+    .about-bg-text{
+        font-size:230px;
+        right:-50px;
+    }
+
+    .stat h3{
+        font-size:38px;
+    }
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .about{
+        padding-top:70px;
+    }
+
+    .about-wrapper{
+
+        flex-direction:column;
+
+        gap:40px;
+    }
+
+    .about-left{
+
+        width:100%;
+    }
+
+    .about-heading{
+
+        margin-bottom:40px;
+
+        font-size:48px;
+    }
+
+    .about-image{
+
+        width:260px;
+    }
+
+    .about-right{
+
+        max-width:100%;
+        padding-top:0;
+    }
+
+    .about-bg-text{
+
+        font-size:170px;
+        right:-40px;
+        top:10px;
+    }
+
+    .stats-wrapper{
+
+        flex-wrap:wrap;
+    }
+
+    .stat{
+
+        flex:0 0 50%;
+
+        border-bottom:1px solid #ECECEC;
+    }
+
+    .stat:nth-child(2){
+
+        border-right:none;
+    }
+
+    .stat:nth-child(3),
+    .stat:nth-child(4){
+
+        border-bottom:none;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .about{
+
+        padding-top:60px;
+    }
+
+    .about-bg-text{
+
+        font-size:95px;
+
+        right:-25px;
+        top:35px;
+    }
+
+    .about-heading{
+
+        font-size:34px;
+
+        margin-bottom:30px;
+    }
+
+    .about-image{
+
+        width:200px;
+    }
+
+    .dots{
+
+        left:-35px;
+
+        width:30px;
+        height:120px;
+    }
+
+    .about-right p{
+
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .about-btn{
+
+        width:140px;
+        height:45px;
+    }
+
+    .stats{
+
+        margin-top:60px;
+    }
+
+    .stats-wrapper{
+
+        flex-direction:column;
+    }
+
+    .stat{
+
+        width:100%;
+
+        border-right:none;
+        border-bottom:1px solid #ECECEC;
+    }
+
+    .stat:last-child{
+
+        border-bottom:none;
+    }
+
+    .stat h3{
+
+        font-size:34px;
+    }
+
+}
+
+/*==========================================
+        WHAT WE DO SECTION RESPONSIVE
+==========================================*/
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+    .wwd{
+        padding:90px 0 100px;
+    }
+
+    .wwd-left{
+        flex:0 0 320px;
+        max-width:320px;
+    }
+
+    .wwd-heading{
+        font-size:36px;
+    }
+
+    .wwd-right{
+        max-width:520px;
+    }
+
+    .wwd-card--large{ height:400px; }
+.wwd-card--medium{ height:340px; }
+.wwd-card--small{ height:270px; }
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .wwd-wrapper{
+        flex-direction:column;
+        align-items:flex-start;
+
+        gap:50px;
+    }
+
+    .wwd-left{
+        flex:0 0 auto;
+        max-width:100%;
+    }
+
+    .wwd-text{
+        max-width:100%;
+    }
+
+    .wwd-right{
+        max-width:100%;
+        width:100%;
+    }
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .wwd{
+        padding:70px 0 80px;
+    }
+
+    .wwd-heading{
+        font-size:30px;
+    }
+
+    .wwd-subtitle{
+        font-size:18px;
+    }
+
+    .wwd-text{
+        font-size:14px;
+
+        margin-bottom:36px;
+    }
+
+    .wwd-footer{
+        gap:18px;
+    }
+
+    .wwd-btn{
+        width:130px;
+        height:44px;
+    }
+
+   .wwd-card--large{ height:300px; }
+.wwd-card--medium{ height:260px; }
+.wwd-card--small{ height:210px; }
+
+    .wwd-card-overlay h3{
+        font-size:20px;
+    }
+
+    .wwd-card-overlay p{
+        font-size:12px;
+        max-width:170px;
+    }
+}
+/*==========================================
+        WHY CHOOSE US SECTION RESPONSIVE
+==========================================*/
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+    .wcu-bg{
+        height:290px;
+    }
+
+    .wcu-heading{
+        font-size:32px;
+        margin-bottom:60px;
+    }
+
+    .wcu-card--orange{
+        transform:translateY(-36px);
+    }
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .wcu{
+        padding-top:80px;
+    }
+
+    .wcu-bg{
+        height:220px;
+        border-radius:0 0 32px 32px;
+    }
+
+    .wcu-heading{
+        font-size:26px;
+        margin-bottom:50px;
+    }
+
+    .wcu-cards{
+        grid-template-columns:1fr 1fr;
+        gap:20px;
+        padding-bottom:80px;
+    }
+
+    .wcu-card--orange{
+        transform:none;
+        grid-column:1 / -1;
+        min-height:280px;
+    }
+
+    .wcu-card{
+        min-height:260px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .wcu{
+        padding-top:60px;
+    }
+
+    .wcu-bg{
+        height:170px;
+        border-radius:0 0 24px 24px;
+    }
+
+    .wcu-heading{
+        font-size:22px;
+        margin-bottom:36px;
+        padding:0 10px;
+    }
+
+    .wcu-cards{
+        grid-template-columns:1fr;
+        gap:18px;
+        padding-bottom:60px;
+    }
+
+    .wcu-card--orange{
+        grid-column:auto;
+        min-height:auto;
+    }
+
+    .wcu-card{
+        min-height:auto;
+        padding:24px 22px 28px;
+    }
+
+    .wcu-card-top{
+        margin-bottom:30px;
+    }
+
+    .wcu-card-img{
+        width:60px;
+        height:60px;
+    }
+
+    .wcu-card-title{
+        font-size:17px;
+    }
+
+    .wcu-card-text{
+        max-width:100%;
+    }
+}

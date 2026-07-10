@@ -1,0 +1,2 @@
+- CSS class names follow BEM-style naming with a double-underscore modifier pattern (e.g. `hero__slide--active`, `hero__slider-btn--prev`).
+- Inline SVG icons are embedded directly in markup using `<svg viewBox="0 0 24 24">` with `fill="none" stroke="currentColor"` rather than external icon fonts.

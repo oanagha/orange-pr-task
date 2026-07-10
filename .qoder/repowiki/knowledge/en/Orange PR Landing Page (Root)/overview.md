@@ -1,0 +1,1 @@
+Repository root for the Orange PR static landing page, providing the entry HTML and asset layout for a hero-slice site with CSS/JS components.
