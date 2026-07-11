@@ -390,17 +390,13 @@
 
 @media (max-width:1200px){
 
-    .wcu-bg{
-        height:290px;
-    }
-
     .wcu-heading{
-        font-size:32px;
-        margin-bottom:60px;
+        font-size:28px;
+        margin-bottom:50px;
     }
 
     .wcu-card--orange{
-        transform:translateY(-36px);
+        transform:translateY(50px);
     }
 }
 
@@ -409,33 +405,38 @@
 @media (max-width:992px){
 
     .wcu{
-        padding-top:80px;
+        padding:60px 0 70px;
+    }
+
+    .wcu-stack{
+        width:92%;
     }
 
     .wcu-bg{
-        height:220px;
-        border-radius:0 0 32px 32px;
+        border-radius:24px;
     }
 
     .wcu-heading{
-        font-size:26px;
-        margin-bottom:50px;
+        font-size:24px;
+        padding-top:44px;
+        margin-bottom:40px;
     }
 
     .wcu-cards{
         grid-template-columns:1fr 1fr;
         gap:20px;
-        padding-bottom:80px;
+        padding-bottom:44px;
     }
 
     .wcu-card--orange{
         transform:none;
         grid-column:1 / -1;
-        min-height:280px;
+        max-width:100%;
     }
 
     .wcu-card{
-        min-height:260px;
+        min-height:220px;
+        max-width:100%;
     }
 }
 
@@ -444,51 +445,56 @@
 @media (max-width:768px){
 
     .wcu{
-        padding-top:60px;
+        padding:50px 0 60px;
+    }
+
+    .wcu-stack{
+        width:100%;
     }
 
     .wcu-bg{
-        height:170px;
-        border-radius:0 0 24px 24px;
+        border-radius:20px;
     }
 
     .wcu-heading{
-        font-size:22px;
-        margin-bottom:36px;
-        padding:0 10px;
+        font-size:20px;
+        padding-top:36px;
+        margin-bottom:30px;
+        padding-left:10px;
+        padding-right:10px;
     }
 
     .wcu-cards{
         grid-template-columns:1fr;
-        gap:18px;
-        padding-bottom:60px;
+        gap:16px;
+        padding:0 16px 36px;
     }
 
     .wcu-card--orange{
         grid-column:auto;
-        min-height:auto;
     }
 
     .wcu-card{
         min-height:auto;
-        padding:24px 22px 28px;
+        padding:22px 20px 26px;
     }
 
     .wcu-card-top{
-        margin-bottom:30px;
+        margin-bottom:24px;
     }
 
     .wcu-card-img{
-        width:60px;
-        height:60px;
+        width:50px;
+        height:50px;
     }
 
     .wcu-card-title{
-        font-size:17px;
+        font-size:14px;
     }
 
     .wcu-card-text{
         max-width:100%;
+        font-size:12px;
     }
 }
 

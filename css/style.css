@@ -838,33 +838,43 @@ a {
 
 .wcu{
 
-    position:relative;
+    background:#fff;
 
-    padding: 0 0;
-
-    overflow:hidden;
+    padding: 70px 0 90px;
 }
 
-/* Light grey banner behind the heading, rounded at the bottom */
+
+.wcu-stack{
+
+    display:grid;
+    grid-template-columns:1fr;
+
+    width:88%;
+    max-width:1100px;
+
+    margin:0 auto;
+}
+
+.wcu-bg,
+.wcu-content{
+
+    grid-row:1;
+    grid-column:1;
+}
+
+/* Light grey box behind the heading and cards */
 
 .wcu-bg{
 
-    position:absolute;
-
-    top:0;
-    left:0px;
-    right:0px;
-
-    height:520px;
-
     background:#EFEFEF;
 
-    border-radius:0 0 0px 0px;
+    border-radius:8px;
+    height:300px;
 
     z-index:0;
 }
 
-.wcu .container{
+.wcu-content{
 
     position:relative;
     z-index:1;
@@ -874,16 +884,16 @@ a {
 
     text-align:center;
 
-    font-size:36px;
-    font-weight:60px;
+    font-size:30px;
+    font-weight:800;
 
     text-transform:uppercase;
 
     color:#0d0d0d;
 
-    padding-top:80px;
+    padding-top:60px;
 
-    margin-bottom:120px;
+    margin-bottom:60px;
 }
 
 /*==========================================
@@ -895,21 +905,20 @@ a {
     display:grid;
     grid-template-columns:repeat(3,1fr);
 
-    align-items:end;
+    align-items:start;
 
-    gap:28px;
-
-    padding-bottom:110px;
+    gap:24px;
+    padding-bottom:90px;
 }
 .wcu-card{
     width: 100%;
-    max-width: 330px;
-    aspect-ratio: 2 / 3;
+    max-width: 230px;
+    min-height: 320px;
 
-    border-radius: 12px;
-    padding: 30px 26px 34px;
+    border-radius: 13px;
+    padding: 24px 22px 28px;
 
-    box-shadow: 0 25px 45px rgba(17,24,39,.12);
+    box-shadow: 0 20px 35px rgba(17,24,39,.10);
 
     display: flex;
     flex-direction: column;
@@ -919,21 +928,22 @@ a {
 .wcu-card--gray{
 
     background:#AEB4B9;
+    margin-left: 30px;
+    
 }
 
 .wcu-card--orange{
 
     background:#FD9073;
 
-    min-height:360px;
-
-    /* lift the middle card above the other two */
-    transform:translateY(120px);
+    /* lower the middle card to create the staggered layout */
+    transform:translateY(64px);
 }
 
 .wcu-card--peach{
 
     background:#FBB78C;
+
 }
 
 /* -------- Top row: number + image thumbnail -------- */
@@ -945,12 +955,12 @@ a {
     align-items:flex-start;
     justify-content:space-between;
 
-    margin-bottom:46px;
+    margin-bottom:34px;
 }
 
 .wcu-number{
 
-    font-size:60px;
+    font-size:38px;
     font-weight:600;
 
     line-height:1;
@@ -960,11 +970,11 @@ a {
 
 .wcu-card-img{
 
-    width:100px;
-    height:100px;
+    width:56px;
+    height:56px;
     flex-shrink:0;
 
-    border-radius:5px;
+    border-radius:6px;
     overflow:hidden;
 
 
@@ -985,8 +995,8 @@ a {
 
 .wcu-card-title{
 
-    font-size:19px;
-    font-weight:500;
+    font-size:15px;
+    font-weight:600;
 
     text-transform:uppercase;
 
@@ -994,17 +1004,17 @@ a {
 
     color:#fff;
 
-    margin-bottom:30px;
+    margin-bottom:14px;
 }
 
 .wcu-card-text{
 
-    font-size:15px;
-    line-height:1.75;
+    font-size:12.5px;
+    line-height:1.7;
 
     color:rgba(255,255,255,.92);
 
-    max-width:230px;
+    max-width:175px;
 }
 
 
